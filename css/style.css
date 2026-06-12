@@ -1,0 +1,215 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:#0f2744;
+padding:15px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav img{
+height:50px;
+width:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h2{
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:120px 20px;
+text-align:center;
+background:url('../assets/images/hero-property.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,.55);
+}
+
+.hero h1,
+.hero p,
+.hero .btn{
+position:relative;
+z-index:1;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#ff8c00;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+section{
+padding:80px 40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.services-preview ul{
+margin-top:20px;
+}
+
+.services-preview li{
+margin-bottom:10px;
+}
+
+.future{
+background:#eef3f9;
+}
+
+footer{
+background:#0f2744;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.stats{
+background:#ffffff;
+text-align:center;
+}
+
+.stats h2{
+margin-bottom:40px;
+}
+
+.stats .card h3{
+font-size:42px;
+color:#ff8c00;
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.footer-content{
+max-width:1000px;
+margin:auto;
+}
+
+footer h2{
+margin-bottom:15px;
+}
+
+footer p{
+margin:8px 0;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+z-index:9999;
+}
+
+
+
+}
