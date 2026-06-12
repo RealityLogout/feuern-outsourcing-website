@@ -151,7 +151,7 @@ font-size:34px;
 .hero p{
 font-size:18px;
 }
-
+}
 .stats{
 background:#ffffff;
 text-align:center;
@@ -202,14 +202,20 @@ bottom:25px;
 right:25px;
 background:#25D366;
 color:white;
-padding:15px 20px;
+padding:14px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-z-index:9999;
+font-size:16px;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+z-index:99999;
+display:flex;
+align-items:center;
+gap:8px;
 }
 
 
 
-}
+
+
+
